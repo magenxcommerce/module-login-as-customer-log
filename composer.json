@@ -1,0 +1,32 @@
+{
+    "name": "magenxcommerce/module-login-as-customer-log",
+    "type": "magento2-module",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "version": "100.4.1",
+    "require": {
+        "php": "~7.3.0||~7.4.0",
+        "magenxcommerce/framework": "103.0.*",
+        "magenxcommerce/module-backend": "102.0.*",
+        "magenxcommerce/module-customer": "103.0.*",
+        "magenxcommerce/module-login-as-customer-api": "100.4.*",
+        "magenxcommerce/module-ui": "101.2.*",
+        "magenxcommerce/module-user": "101.2.*"
+    },
+    "suggest": {
+        "magenxcommerce/module-login-as-customer": "100.4.*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Magento\\LoginAsCustomerLog\\": ""
+        }
+    },
+    "replace": {
+        "magento/module-login-as-customer-log": "*"
+    }
+}
